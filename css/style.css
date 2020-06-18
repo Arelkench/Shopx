@@ -1,0 +1,92 @@
+* {
+  padding: 0;
+  margin: 0;
+  color: #45505e;
+}
+
+.first-screen {
+  width: 100%;
+  height: 80vh;
+  background-color: #ade1c5;
+  display: flex;
+  justify-content: center;
+}
+.first-screen .first-screen__header {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 200px;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+}
+.first-screen .first-screen__header .header__content {
+  font-family: "Roboto", sans-serif;
+  font-size: 12px;
+  text-transform: uppercase;
+  width: 60%;
+  font-weight: 500;
+  height: 200px;
+}
+.first-screen .first-screen__header .header__content .content__main {
+  width: 100%;
+  height: 150px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.first-screen .first-screen__header .header__content .content__main .main__search {
+  display: flex;
+  align-items: center;
+  width: 22%;
+}
+.first-screen .first-screen__header .header__content .content__main .main__search .search__logo {
+  width: 15px;
+  height: 15px;
+  margin-right: 10px;
+}
+.first-screen .first-screen__header .header__content .content__main .main__search .search__input {
+  border: none;
+  outline: none;
+  font-family: "Roboto", sans-serif;
+  width: 80%;
+  height: 30px;
+}
+.first-screen .first-screen__header .header__content .content__main .main__icons {
+  float: right;
+  width: 15%;
+  display: flex;
+  align-items: center;
+}
+.first-screen .first-screen__header .header__content .content__main .main__icons .icon {
+  margin-right: 15px;
+}
+.first-screen .first-screen__header .header__navbar {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+}
+.first-screen .first-screen__header .header__navbar .navbar__link {
+  text-decoration: none;
+  text-transform: uppercase;
+  margin-left: 20px;
+  letter-spacing: 1px;
+}
+.first-screen .first-screen__content {
+  margin-top: 300px;
+  width: 40%;
+  flex-flow: column nowrap;
+}
+.first-screen .first-screen__content .content__title-img {
+  width: 80%;
+}
+.first-screen .first-screen__content .content__link {
+  font-family: "Roboto", sans-serif;
+  color: #000;
+  font-weight: 500;
+  float: left;
+  width: 200px;
+}
+
+/*# sourceMappingURL=style.css.map */
