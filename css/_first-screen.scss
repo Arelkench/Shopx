@@ -66,21 +66,28 @@
         margin-left: 20px;
         letter-spacing: 1px;
       }
+      .navbar__link:hover{
+        color: #ade1c5;
+      }
     }
   }
   .first-screen__content {
     margin-top: 300px;
-    width: 40%;
-    flex-flow: column nowrap;
-    .content__title-img {
-      width: 80%;
-    }
-    .content__link {
-      font-family: $roboto;
-      color: #000;
-      font-weight: 500;
-      float: left;
-      width: 200px;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    .content__main {
+      display: flex;
+      flex-flow: column nowrap;
+      .content__title-img {
+        width: 600px;
+        height: 190px;
+      }
+      .content__link {
+        font-family: $roboto;
+        color: #000;
+        font-weight: 500;
+      }
     }
   }
 

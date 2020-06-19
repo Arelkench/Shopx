@@ -1,0 +1,159 @@
+.second-screen {
+  width: 100%;
+  height: 120vh;
+  .second-screen__header {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    font-family: $roboto;
+    font-size: 12px;
+    text-transform: uppercase;
+    .header__content {
+      width: 60%;
+      height: 100%;
+      align-items: center;
+      display: flex;
+      justify-content: space-between;
+      border-bottom: 1px #e2e2e2 solid;
+      .content__navbar {
+        width: 400px;
+        .navbar__link {
+          text-decoration: none;
+          text-transform: uppercase;
+          margin-left: 20px;
+          letter-spacing: 1px;
+        }
+        .navbar__link:hover{
+          color: #ade1c5;
+        }
+      }
+      .content__search {
+        float: right;
+        display: flex;
+        align-items: center;
+        width: 100px;
+        .search__logo {
+          width: 15px;
+          height: 15px;
+          margin-right: 10px;
+        }
+        .search__input {
+          border: none;
+          outline: none;
+          font-family: $roboto;
+          width: 70px;
+          height: 30px;
+        }
+      }
+    }
+  }
+  .second-screen__content {
+    width: 100%;
+    height: 90%;
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    .content__main {
+      display: flex;
+      flex-flow: column nowrap;
+      width: 58%;
+      height: 100%;
+      .main__block-row {
+        margin-bottom: 35px;
+        width: 100%;
+        height: 500px;
+        display: flex;
+        justify-content: space-between;
+        .block {
+          width: 32%;
+          height: 500px;
+          display: flex;
+          box-shadow: 5px 3px 20px 0 #e2e2e2;
+          flex-flow: column nowrap;
+          .block__content {
+            width: 100%;
+            height: 75%;
+            display: flex;
+            .content__sidebar {
+              align-items: center;
+              display: flex;
+              flex-flow: column nowrap;
+              width: 20%;
+              .sidebar__icon {
+                width: 17px;
+                margin: 15px 0;
+              }
+            }
+            .content__main {
+              width: 80%;
+              height: 100%;
+              align-items: center;
+              .main__img {
+                margin-left: 13%;
+                width: 87%;
+                height: 60%;
+                background-color: #e7a8c6;
+              }
+              .main__img:hover {
+                background-color: #ade1c5;
+              }
+              .main__about {
+                margin-top: 15%;
+                width: 70%;
+                height: 20%;
+                .about__title {
+                  text-decoration: none;
+                  color: #000;
+                  font-size: 22px;
+                  font-family: $titillium;
+                  font-weight: 600;
+                }
+                .about__price {
+                  font-size: 14px;
+                  font-family: $roboto;
+                  font-weight: 500;
+                }
+              }
+            }
+          }
+          .block__button {
+            border-top: 1px #e2e2e2 solid;
+            margin: 0 15px;
+            width: 90%;
+            height: 25%;
+            background-color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .button {
+              text-decoration: none;
+              display: flex;
+              height: 25px;
+              .button__img {
+                margin-right: 10px;
+                width: 27px;
+                height: 21px;
+              }
+              .text {
+                margin-top: 2px;
+                font-family: $roboto;
+                color: #000;
+                font-size: 14px;
+                text-transform: uppercase;
+                font-weight: 500;
+              }
+              .text:hover {
+                color: #ade1c5;
+              }
+            }
+          }
+
+        }
+        .block:hover {
+          border: 2px solid #ade1c5;
+        }
+      }
+    }
+  }
+}

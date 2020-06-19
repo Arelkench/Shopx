@@ -73,20 +73,186 @@
   margin-left: 20px;
   letter-spacing: 1px;
 }
+.first-screen .first-screen__header .header__navbar .navbar__link:hover {
+  color: #ade1c5;
+}
 .first-screen .first-screen__content {
   margin-top: 300px;
-  width: 40%;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+}
+.first-screen .first-screen__content .content__main {
+  display: flex;
   flex-flow: column nowrap;
 }
-.first-screen .first-screen__content .content__title-img {
-  width: 80%;
+.first-screen .first-screen__content .content__main .content__title-img {
+  width: 600px;
+  height: 190px;
 }
-.first-screen .first-screen__content .content__link {
+.first-screen .first-screen__content .content__main .content__link {
   font-family: "Roboto", sans-serif;
   color: #000;
   font-weight: 500;
-  float: left;
-  width: 200px;
+}
+
+.second-screen {
+  width: 100%;
+  height: 120vh;
+}
+.second-screen .second-screen__header {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+.second-screen .second-screen__header .header__content {
+  width: 60%;
+  height: 100%;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px #e2e2e2 solid;
+}
+.second-screen .second-screen__header .header__content .content__navbar {
+  width: 400px;
+}
+.second-screen .second-screen__header .header__content .content__navbar .navbar__link {
+  text-decoration: none;
+  text-transform: uppercase;
+  margin-left: 20px;
+  letter-spacing: 1px;
+}
+.second-screen .second-screen__header .header__content .content__navbar .navbar__link:hover {
+  color: #ade1c5;
+}
+.second-screen .second-screen__header .header__content .content__search {
+  float: right;
+  display: flex;
+  align-items: center;
+  width: 100px;
+}
+.second-screen .second-screen__header .header__content .content__search .search__logo {
+  width: 15px;
+  height: 15px;
+  margin-right: 10px;
+}
+.second-screen .second-screen__header .header__content .content__search .search__input {
+  border: none;
+  outline: none;
+  font-family: "Roboto", sans-serif;
+  width: 70px;
+  height: 30px;
+}
+.second-screen .second-screen__content {
+  width: 100%;
+  height: 90%;
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+}
+.second-screen .second-screen__content .content__main {
+  display: flex;
+  flex-flow: column nowrap;
+  width: 58%;
+  height: 100%;
+}
+.second-screen .second-screen__content .content__main .main__block-row {
+  margin-bottom: 35px;
+  width: 100%;
+  height: 500px;
+  display: flex;
+  justify-content: space-between;
+}
+.second-screen .second-screen__content .content__main .main__block-row .block {
+  width: 32%;
+  height: 500px;
+  display: flex;
+  box-shadow: 5px 3px 20px 0 #e2e2e2;
+  flex-flow: column nowrap;
+}
+.second-screen .second-screen__content .content__main .main__block-row .block .block__content {
+  width: 100%;
+  height: 75%;
+  display: flex;
+}
+.second-screen .second-screen__content .content__main .main__block-row .block .block__content .content__sidebar {
+  align-items: center;
+  display: flex;
+  flex-flow: column nowrap;
+  width: 20%;
+}
+.second-screen .second-screen__content .content__main .main__block-row .block .block__content .content__sidebar .sidebar__icon {
+  width: 17px;
+  margin: 15px 0;
+}
+.second-screen .second-screen__content .content__main .main__block-row .block .block__content .content__main {
+  width: 80%;
+  height: 100%;
+  align-items: center;
+}
+.second-screen .second-screen__content .content__main .main__block-row .block .block__content .content__main .main__img {
+  margin-left: 13%;
+  width: 87%;
+  height: 60%;
+  background-color: #e7a8c6;
+}
+.second-screen .second-screen__content .content__main .main__block-row .block .block__content .content__main .main__img:hover {
+  background-color: #ade1c5;
+}
+.second-screen .second-screen__content .content__main .main__block-row .block .block__content .content__main .main__about {
+  margin-top: 15%;
+  width: 70%;
+  height: 20%;
+}
+.second-screen .second-screen__content .content__main .main__block-row .block .block__content .content__main .main__about .about__title {
+  text-decoration: none;
+  color: #000;
+  font-size: 22px;
+  font-family: "Titillium Web", sans-serif;
+  font-weight: 600;
+}
+.second-screen .second-screen__content .content__main .main__block-row .block .block__content .content__main .main__about .about__price {
+  font-size: 14px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+}
+.second-screen .second-screen__content .content__main .main__block-row .block .block__button {
+  border-top: 1px #e2e2e2 solid;
+  margin: 0 15px;
+  width: 90%;
+  height: 25%;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.second-screen .second-screen__content .content__main .main__block-row .block .block__button .button {
+  text-decoration: none;
+  display: flex;
+  height: 25px;
+}
+.second-screen .second-screen__content .content__main .main__block-row .block .block__button .button .button__img {
+  margin-right: 10px;
+  width: 27px;
+  height: 21px;
+}
+.second-screen .second-screen__content .content__main .main__block-row .block .block__button .button .text {
+  margin-top: 2px;
+  font-family: "Roboto", sans-serif;
+  color: #000;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+.second-screen .second-screen__content .content__main .main__block-row .block .block__button .button .text:hover {
+  color: #ade1c5;
+}
+.second-screen .second-screen__content .content__main .main__block-row .block:hover {
+  border: 2px solid #ade1c5;
 }
 
 /*# sourceMappingURL=style.css.map */
