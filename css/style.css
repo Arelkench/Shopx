@@ -2,6 +2,7 @@
   padding: 0;
   margin: 0;
   color: #45505e;
+  overflow-style: inherit;
 }
 
 .first-screen {
@@ -98,7 +99,7 @@
 
 .second-screen {
   width: 100%;
-  height: 120vh;
+  height: 100%;
 }
 .second-screen .second-screen__header {
   width: 100%;
@@ -153,11 +154,11 @@
   margin-top: 100px;
   display: flex;
   justify-content: center;
+  padding-bottom: 50px;
 }
 .second-screen .second-screen__content .content__main {
   display: flex;
   flex-flow: column nowrap;
-  width: 58%;
   height: 100%;
 }
 .second-screen .second-screen__content .content__main .main__block-row {
@@ -165,14 +166,14 @@
   width: 100%;
   height: 500px;
   display: flex;
-  justify-content: space-between;
 }
 .second-screen .second-screen__content .content__main .main__block-row .block {
-  width: 32%;
+  width: 350px;
   height: 500px;
   display: flex;
   box-shadow: 5px 3px 20px 0 #e2e2e2;
   flex-flow: column nowrap;
+  margin-right: 15px;
 }
 .second-screen .second-screen__content .content__main .main__block-row .block .block__content {
   width: 100%;
@@ -201,6 +202,7 @@
   background-color: #e7a8c6;
 }
 .second-screen .second-screen__content .content__main .main__block-row .block .block__content .content__main .main__img:hover {
+  transition: 0.5s;
   background-color: #ade1c5;
 }
 .second-screen .second-screen__content .content__main .main__block-row .block .block__content .content__main .main__about {
@@ -249,10 +251,123 @@
   font-weight: 500;
 }
 .second-screen .second-screen__content .content__main .main__block-row .block .block__button .button .text:hover {
+  transition: 0.3s;
   color: #ade1c5;
 }
-.second-screen .second-screen__content .content__main .main__block-row .block:hover {
-  border: 2px solid #ade1c5;
+.second-screen .second-screen__advantages {
+  width: 100%;
+  height: 200px;
+  background-color: #222;
+  display: flex;
+  justify-content: space-between;
+}
+.second-screen .second-screen__advantages .advantages__block-black {
+  height: 100%;
+  width: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #1d1e24;
+}
+.second-screen .second-screen__advantages .advantages__block-gray {
+  height: 100%;
+  width: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #202127;
+}
+
+.footer {
+  width: 100%;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+}
+.footer .footer__content {
+  display: flex;
+  justify-content: space-between;
+  width: 1000px;
+  height: 95%;
+}
+.footer .footer__content .content__store-description {
+  user-select: none;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  width: 360px;
+  height: 100%;
+}
+.footer .footer__content .content__store-description .store-description__logo {
+  margin-top: 60px;
+}
+.footer .footer__content .content__store-description .store-description__text {
+  margin-top: 15px;
+  font-family: "Titillium Web", sans-serif;
+  font-size: 14px;
+  height: 100px;
+  line-height: 22px;
+  color: #7b7c85;
+}
+.footer .footer__content .content__store-description .store-description__link {
+  text-decoration: none;
+  color: #7b7c85;
+  font-family: "Roboto", sans-serif;
+  font-size: 13px;
+}
+.footer .footer__content .content__store-description .store-description__copy {
+  font-family: "Roboto", sans-serif;
+  color: #7b7c85;
+  font-size: 11px;
+  width: 100%;
+}
+.footer .footer__content .content__links {
+  width: 200px;
+  display: flex;
+  justify-content: space-between;
+  flex-flow: column nowrap;
+}
+.footer .footer__content .content__links .links__title {
+  user-select: none;
+  font-family: "Titillium Web", sans-serif;
+  color: #1d1e24;
+  margin-bottom: 30px;
+}
+.footer .footer__content .content__links .link {
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  color: #7b7c85;
+}
+.footer .footer__content .content__instagram {
+  width: 350px;
+  height: 100%;
+}
+.footer .footer__content .content__instagram .instagram__text {
+  user-select: none;
+  display: flex;
+  margin-bottom: 60px;
+}
+.footer .footer__content .content__instagram .instagram__text .icon {
+  width: 17px;
+  height: 16px;
+  margin-top: 5px;
+  margin-right: 10px;
+}
+.footer .footer__content .content__instagram .instagram__text .text {
+  font-family: "Titillium Web", sans-serif;
+  color: #1d1e24;
+}
+.footer .footer__content .content__instagram .instagram__images-row {
+  width: 100%;
+  height: 80px;
+  margin-bottom: 5px;
+  display: flex;
+  justify-content: space-between;
+}
+.footer .footer__content .content__instagram .instagram__images-row .img {
+  width: 84px;
+  height: 100%;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -2,9 +2,11 @@
   padding: 0;
   margin: 0;
   color: #45505e;
+  overflow-style: inherit;
 
 }
 $roboto:"Roboto", sans-serif;
 $titillium: 'Titillium Web', sans-serif;
 @import "first-screen";
 @import "second-screen";
+@import "footer";
