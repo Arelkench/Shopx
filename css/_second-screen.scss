@@ -1,12 +1,12 @@
 .second-screen {
-  width: 100%;
+  max-width: 100%;
   height: 100%;
   .second-screen__header {
     width: 100%;
     height: 100px;
     display: flex;
     justify-content: center;
-    font-family: $roboto;
+    font-family: "Roboto", sans-serif;
     font-size: 12px;
     text-transform: uppercase;
     .header__content {
@@ -25,6 +25,7 @@
           letter-spacing: 1px;
         }
         .navbar__link:hover{
+          transition: 0.3s;
           color: #ade1c5;
         }
       }
@@ -41,7 +42,7 @@
         .search__input {
           border: none;
           outline: none;
-          font-family: $roboto;
+          font-family: "Roboto", sans-serif;
           width: 70px;
           height: 30px;
         }
@@ -70,7 +71,6 @@
           display: flex;
           box-shadow: 5px 3px 20px 0 #e2e2e2;
           flex-flow: column nowrap;
-          margin-right: 15px;
           .block__content {
             width: 100%;
             height: 75%;
@@ -107,12 +107,12 @@
                   text-decoration: none;
                   color: #000;
                   font-size: 22px;
-                  font-family: $titillium;
+                  font-family: 'Titillium Web', sans-serif;
                   font-weight: 600;
                 }
                 .about__price {
                   font-size: 14px;
-                  font-family: $roboto;
+                  font-family: "Roboto", sans-serif;
                   font-weight: 500;
                 }
               }
@@ -138,7 +138,7 @@
               }
               .text {
                 margin-top: 2px;
-                font-family: $roboto;
+                font-family: "Roboto", sans-serif;
                 color: #000;
                 font-size: 14px;
                 text-transform: uppercase;

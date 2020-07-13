@@ -6,7 +6,7 @@
 }
 
 .first-screen {
-  width: 100%;
+  max-width: 100%;
   height: 80vh;
   background-color: #ade1c5;
   display: flex;
@@ -75,6 +75,7 @@
   letter-spacing: 1px;
 }
 .first-screen .first-screen__header .header__navbar .navbar__link:hover {
+  transition: 0.3s;
   color: #ade1c5;
 }
 .first-screen .first-screen__content {
@@ -98,7 +99,7 @@
 }
 
 .second-screen {
-  width: 100%;
+  max-width: 100%;
   height: 100%;
 }
 .second-screen .second-screen__header {
@@ -128,6 +129,7 @@
   letter-spacing: 1px;
 }
 .second-screen .second-screen__header .header__content .content__navbar .navbar__link:hover {
+  transition: 0.3s;
   color: #ade1c5;
 }
 .second-screen .second-screen__header .header__content .content__search {
@@ -173,7 +175,6 @@
   display: flex;
   box-shadow: 5px 3px 20px 0 #e2e2e2;
   flex-flow: column nowrap;
-  margin-right: 15px;
 }
 .second-screen .second-screen__content .content__main .main__block-row .block .block__content {
   width: 100%;
@@ -280,7 +281,7 @@
 
 .footer {
   width: 100%;
-  height: 50vh;
+  height: 450px;
   display: flex;
   justify-content: center;
 }
@@ -296,7 +297,7 @@
   flex-flow: column nowrap;
   justify-content: space-between;
   width: 360px;
-  height: 100%;
+  height: 400px;
 }
 .footer .footer__content .content__store-description .store-description__logo {
   margin-top: 60px;
@@ -322,6 +323,7 @@
   width: 100%;
 }
 .footer .footer__content .content__links {
+  height: 400px;
   width: 200px;
   display: flex;
   justify-content: space-between;
