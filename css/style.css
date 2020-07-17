@@ -26,42 +26,13 @@ body {
   font-family: "Roboto", sans-serif;
   font-size: 12px;
   text-transform: uppercase;
-  width: 60%;
   font-weight: 500;
   height: 200px;
 }
 .first-screen .first-screen__header .header__content .content__main {
-  width: 100%;
-  height: 150px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.first-screen .first-screen__header .header__content .content__main .main__search {
+  height: 120px;
   display: flex;
   align-items: center;
-  width: 22%;
-}
-.first-screen .first-screen__header .header__content .content__main .main__search .search__logo {
-  width: 15px;
-  height: 15px;
-  margin-right: 10px;
-}
-.first-screen .first-screen__header .header__content .content__main .main__search .search__input {
-  border: none;
-  outline: none;
-  font-family: "Roboto", sans-serif;
-  width: 80%;
-  height: 30px;
-}
-.first-screen .first-screen__header .header__content .content__main .main__icons {
-  float: right;
-  width: 15%;
-  display: flex;
-  align-items: center;
-}
-.first-screen .first-screen__header .header__content .content__main .main__icons .icon {
-  margin-right: 15px;
 }
 .first-screen .first-screen__header .header__navbar {
   width: 100%;
@@ -89,10 +60,6 @@ body {
   display: flex;
   flex-flow: column nowrap;
 }
-.first-screen .first-screen__content .content__main .content__title-img {
-  width: 600px;
-  height: 190px;
-}
 .first-screen .first-screen__content .content__main .content__link {
   font-family: "Roboto", sans-serif;
   color: #000;
@@ -114,15 +81,10 @@ body {
   text-transform: uppercase;
 }
 .second-screen .second-screen__header .header__content {
-  width: 60%;
-  height: 100%;
+  margin-top: 50px;
   align-items: center;
   display: flex;
   justify-content: space-between;
-  border-bottom: 1px #e2e2e2 solid;
-}
-.second-screen .second-screen__header .header__content .content__navbar {
-  width: 400px;
 }
 .second-screen .second-screen__header .header__content .content__navbar .navbar__link {
   text-decoration: none;
@@ -134,151 +96,17 @@ body {
   transition: 0.3s;
   color: #ade1c5;
 }
-.second-screen .second-screen__header .header__content .content__search {
-  float: right;
+.second-screen .second-screen__header .header__content .main__icons {
   display: flex;
   align-items: center;
-  width: 100px;
 }
-.second-screen .second-screen__header .header__content .content__search .search__logo {
-  width: 15px;
-  height: 15px;
-  margin-right: 10px;
-}
-.second-screen .second-screen__header .header__content .content__search .search__input {
-  border: none;
-  outline: none;
-  font-family: "Roboto", sans-serif;
-  width: 70px;
-  height: 30px;
+.second-screen .second-screen__header .header__content .main__icons .icon {
+  margin-right: 15px;
 }
 .second-screen .second-screen__content {
-  width: 100%;
-  height: 90%;
-  margin-top: 100px;
-  display: flex;
-  justify-content: center;
-  padding-bottom: 50px;
-}
-.second-screen .second-screen__content .content__main {
-  display: flex;
-  flex-flow: column nowrap;
-  height: 100%;
-}
-.second-screen .second-screen__content .content__main .main__block-row {
-  margin-bottom: 35px;
-  width: 100%;
-  height: 500px;
-  display: flex;
-}
-.second-screen .second-screen__content .content__main .main__block-row .block {
-  width: 350px;
-  height: 500px;
-  display: flex;
-  box-shadow: 5px 3px 20px 0 #e2e2e2;
-  flex-flow: column nowrap;
-}
-.second-screen .second-screen__content .content__main .main__block-row .block .block__content {
-  width: 100%;
-  height: 75%;
-  display: flex;
-}
-.second-screen .second-screen__content .content__main .main__block-row .block .block__content .content__sidebar {
-  align-items: center;
-  display: flex;
-  flex-flow: column nowrap;
-  width: 20%;
-}
-.second-screen .second-screen__content .content__main .main__block-row .block .block__content .content__sidebar .sidebar__icon {
-  width: 17px;
-  margin: 15px 0;
-}
-.second-screen .second-screen__content .content__main .main__block-row .block .block__content .content__main {
-  width: 80%;
-  height: 100%;
-  align-items: center;
-}
-.second-screen .second-screen__content .content__main .main__block-row .block .block__content .content__main .main__img {
-  margin-left: 13%;
-  width: 87%;
-  height: 60%;
-  background-color: #e7a8c6;
-}
-.second-screen .second-screen__content .content__main .main__block-row .block .block__content .content__main .main__img:hover {
-  transition: 0.5s;
+  height: 100vh;
   background-color: #ade1c5;
-}
-.second-screen .second-screen__content .content__main .main__block-row .block .block__content .content__main .main__about {
-  margin-top: 15%;
-  width: 70%;
-  height: 20%;
-}
-.second-screen .second-screen__content .content__main .main__block-row .block .block__content .content__main .main__about .about__title {
-  text-decoration: none;
-  color: #000;
-  font-size: 22px;
-  font-family: "Titillium Web", sans-serif;
-  font-weight: 600;
-}
-.second-screen .second-screen__content .content__main .main__block-row .block .block__content .content__main .main__about .about__price {
-  font-size: 14px;
-  font-family: "Roboto", sans-serif;
-  font-weight: 500;
-}
-.second-screen .second-screen__content .content__main .main__block-row .block .block__button {
-  border-top: 1px #e2e2e2 solid;
-  margin: 0 15px;
-  width: 90%;
-  height: 25%;
-  background-color: #fff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.second-screen .second-screen__content .content__main .main__block-row .block .block__button .button {
-  text-decoration: none;
-  display: flex;
-  height: 25px;
-}
-.second-screen .second-screen__content .content__main .main__block-row .block .block__button .button .button__img {
-  margin-right: 10px;
-  width: 27px;
-  height: 21px;
-}
-.second-screen .second-screen__content .content__main .main__block-row .block .block__button .button .text {
-  margin-top: 2px;
-  font-family: "Roboto", sans-serif;
-  color: #000;
-  font-size: 14px;
-  text-transform: uppercase;
-  font-weight: 500;
-}
-.second-screen .second-screen__content .content__main .main__block-row .block .block__button .button .text:hover {
-  transition: 0.3s;
-  color: #ade1c5;
-}
-.second-screen .second-screen__advantages {
-  width: 100%;
-  height: 200px;
-  background-color: #222;
-  display: flex;
-  justify-content: space-between;
-}
-.second-screen .second-screen__advantages .advantages__block-black {
-  height: 100%;
-  width: 25%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #1d1e24;
-}
-.second-screen .second-screen__advantages .advantages__block-gray {
-  height: 100%;
-  width: 25%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #202127;
+  margin-top: 50px;
 }
 
 .footer {

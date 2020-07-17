@@ -15,41 +15,13 @@
       font-family: "Roboto", sans-serif;
       font-size: 12px;
       text-transform: uppercase;
-      width: 60%;
       font-weight: 500;
       height: 200px;
       .content__main {
-        width: 100%;
-        height: 150px;
+        height: 120px;
         display: flex;
-        justify-content: space-between;
         align-items: center;
-        .main__search {
-          display: flex;
-          align-items: center;
-          width: 22%;
-          .search__logo {
-            width: 15px;
-            height: 15px;
-            margin-right: 10px;
-          }
-          .search__input {
-            border: none;
-            outline: none;
-            font-family: "Roboto", sans-serif;
-            width: 80%;
-            height: 30px;
-          }
-        }
-        .main__icons {
-          float: right;
-          width: 15%;
-          display: flex;
-          align-items: center;
-          .icon {
-            margin-right: 15px;
-          }
-        }
+
       }
     }
     .header__navbar {
@@ -78,8 +50,7 @@
       display: flex;
       flex-flow: column nowrap;
       .content__title-img {
-        width: 600px;
-        height: 190px;
+
       }
       .content__link {
         font-family: "Roboto", sans-serif;

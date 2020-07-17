@@ -5,6 +5,7 @@
  <meta name="viewport" content="width=device-width, initial-scale=1">
  <link rel="shortcut icon" href="img/favicon.png" type="image/png">
  <script src="scripts/script.js" defer></script>
+ <link rel="stylesheet" href="css/bootstrap.min.css">
  <link rel="stylesheet" href="css/style.css">
  <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;600&display=swap" rel="stylesheet">
  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
@@ -12,39 +13,72 @@
 </head>
 <body>
  <div class="first-screen">
-  <header class="first-screen__header">
-   <div class="header__content">
-    <div class="content__main">
-     <div class="main__search">
-      <img src="img/search__logo.png" class="search__logo"  alt="Shopx"/>
-      <label>
-       <input type="text" placeholder="SEARCH" class="search__input" />
-      </label>
-     </div>
-     <img src="img/logo.png" class="main__logo" alt="-shop online"/>
-     <div class="main__icons">
-      <a href="#"><img class="icon" src="img/user__logo.png" alt="user"/></a>
-      <a href="#"><img class="icon" src="img/cart__logo.png" alt="cart"/></a>
-      <a href="#"><img class="icon" src="img/nav.png" alt="nav"></a>
-     </div>
+  <header class="first-screen__header container-fluid">
+   <div class="header__content container">
+    <div class="content__main  container justify-content-center">
+     <div><img src="img/logo.png" class="main__logo " alt="-shop online"/></div>
     </div>
-     <div class="header__navbar">
-       <a class="navbar__link" href="#">Home</a>
-       <a class="navbar__link" href="#">Shop</a>
-       <a class="navbar__link" href="#">Element</a>
-       <a class="navbar__link" href="#">Pages</a>
-       <a class="navbar__link" href="#">Portfolio</a>
-       <a class="navbar__link" href="#">Blogs</a>
-     </div>
+    <ul class="nav nav-tabs justify-content-center">
+     <li class="nav-item">
+      <a class="nav-link active" href="#">HOME</a>
+     </li>
+     <li class="nav-item">
+      <a class="nav-link" href="#">SHOP</a>
+     </li>
+     <li class="nav-item">
+      <a class="nav-link" href="#">ELEMENT</a>
+     </li>
+     <li class="nav-item">
+      <a class="nav-link " href="#">PAGES</a>
+     </li>
+     <li class="nav-item">
+      <a class="nav-link " href="#">PORTFOLIO</a>
+     </li>
+     <li class="nav-item">
+      <a class="nav-link " href="#">BLOGS</a>
+     </li>
+    </ul>
    </div>
   </header>
   <div class="first-screen__content">
    <div class="content__main">
-   <img src="img/title__img.png" class="content__title-img" alt="title">
+   <img src="img/title__img.png" class="img-fluid" alt="title">
    <a href="#" class="content__link">SHOP NOW</a>
   </div>
   </div>
  </div>
+<div class="second-screen container-fluid">
+ <header class="second-screen__header container">
+  <div class="header__content container">
+  <div class="content__navbar">
+   <ul class="nav ">
+    <li class="nav-item">
+     <a class="nav-link active" href="#">ALL</a>
+    </li>
+    <li class="nav-item">
+     <a class="nav-link" href="#">HOME</a>
+    </li>
+    <li class="nav-item">
+     <a class="nav-link " href="#">LEARNING</a>
+    </li>
+    <li class="nav-item">
+     <a class="nav-link " href="#">OFFICE</a>
+    </li>
+    <li class="nav-item">
+     <a class="nav-link " href="#">OUTDOOR</a>
+    </li>
+   </ul>
+  </div>
+   <div class="main__icons ">
+    <a href="#"><img class="icon" src="img/user__logo.png" alt="user"/></a>
+    <a href="#"><img class="icon" src="img/cart__logo.png" alt="cart"/></a>
+    <a href="#"><img class="icon" src="img/nav.png" alt="nav"></a>
+   </div>
+  </div>
+ </header>
+ <div class="second-screen__content container">
 
+ </div>
+</div>
 </body>
 </html>
