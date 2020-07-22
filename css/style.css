@@ -16,11 +16,7 @@ body {
   background-color: #ade1c5;
 }
 .first-screen .first-screen__header {
-  width: 100%;
-  height: 200px;
   background-color: #fff;
-  display: flex;
-  justify-content: center;
 }
 .first-screen .first-screen__header .header__content {
   font-family: "Roboto", sans-serif;
@@ -34,36 +30,21 @@ body {
   display: flex;
   align-items: center;
 }
-.first-screen .first-screen__header .header__navbar {
-  width: 100%;
-  height: 50px;
-  display: flex;
-  justify-content: center;
-}
-.first-screen .first-screen__header .header__navbar .navbar__link {
+.first-screen .first-screen__header .header__content a {
   text-decoration: none;
+  color: #4e555b;
+  font-family: "Roboto", sans-serif;
+  font-size: 12px;
   text-transform: uppercase;
-  margin-left: 20px;
-  letter-spacing: 1px;
 }
-.first-screen .first-screen__header .header__navbar .navbar__link:hover {
+.first-screen .first-screen__header .header__content a:hover {
   transition: 0.3s;
-  color: #ade1c5;
+  color: #1d1e24;
 }
 .first-screen .first-screen__content {
   margin-top: 150px;
-  width: 100%;
   display: flex;
   justify-content: center;
-}
-.first-screen .first-screen__content .content__main {
-  display: flex;
-  flex-flow: column nowrap;
-}
-.first-screen .first-screen__content .content__main .content__link {
-  font-family: "Roboto", sans-serif;
-  color: #000;
-  font-weight: 500;
 }
 
 .second-screen {
@@ -72,29 +53,25 @@ body {
   box-sizing: border-box;
 }
 .second-screen .second-screen__header {
-  width: 100%;
   height: 100px;
-  display: flex;
-  justify-content: center;
   font-family: "Roboto", sans-serif;
   font-size: 12px;
   text-transform: uppercase;
 }
 .second-screen .second-screen__header .header__content {
   margin-top: 50px;
-  align-items: center;
   display: flex;
   justify-content: space-between;
 }
-.second-screen .second-screen__header .header__content .content__navbar .navbar__link {
+.second-screen .second-screen__header .header__content a {
   text-decoration: none;
+  color: #4e555b;
   text-transform: uppercase;
-  margin-left: 20px;
   letter-spacing: 1px;
 }
-.second-screen .second-screen__header .header__content .content__navbar .navbar__link:hover {
+.second-screen .second-screen__header .header__content a:hover {
   transition: 0.3s;
-  color: #ade1c5;
+  color: #1d1e24;
 }
 .second-screen .second-screen__header .header__content .main__icons {
   display: flex;
@@ -105,8 +82,14 @@ body {
 }
 .second-screen .second-screen__content {
   height: 100vh;
+}
+.second-screen .second-screen__content .col-md-4 {
+  height: 400px;
+  margin-bottom: 4%;
+}
+.second-screen .second-screen__content .col-md-4 .container {
+  height: 100%;
   background-color: #ade1c5;
-  margin-top: 50px;
 }
 
 .footer {
