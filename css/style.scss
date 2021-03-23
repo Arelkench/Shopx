@@ -4,3 +4,13 @@
   color: #45505e;
   overflow-style: inherit;
 }
+a {
+  text-decoration: none;
+}
+@import "mixins";
+@import "header";
+@import "new-arrivals";
+@import "products-list";
+@import "featured-product";
+@import "our-advantages";
+@import "footer";

@@ -1,0 +1,6 @@
+@import "variables";
+@mixin text {
+  color: $text;
+  font-size: 11px;
+  text-transform: uppercase;
+}

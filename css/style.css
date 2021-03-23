@@ -5,4 +5,80 @@
   overflow-style: inherit;
 }
 
+a {
+  text-decoration: none;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.header__search {
+  height: 30px;
+}
+.header__search-img {
+  width: auto;
+}
+.header__search-input {
+  color: #45505e;
+  font-size: 11px;
+  text-transform: uppercase;
+  max-width: 275px;
+  height: 100%;
+  border: none;
+  outline: none;
+}
+.header__logo {
+  width: 100%;
+  margin: 5px;
+}
+.header__icons {
+  max-width: 300px;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+.header__icons .user {
+  margin: 0 10px;
+}
+.header__icons .cart {
+  margin: 0 10px;
+}
+.header__navbar {
+  margin: 50px 0;
+  width: 500px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.header__navbar .navbar-link {
+  color: #45505e;
+  font-size: 11px;
+  text-transform: uppercase;
+}
+
+.wrapper {
+  margin-top: 50px;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+@media screen and (max-width: 500px) {
+  .header__logo {
+    width: 80%;
+  }
+  .header__navbar {
+    width: 95%;
+  }
+  .header__search {
+    width: 85px;
+  }
+  .header__search-input {
+    width: 50px;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */
