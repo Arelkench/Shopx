@@ -1,5 +1,5 @@
 @import "variables";
-@mixin text {
+@mixin navLink {
   color: $text;
   font-size: 11px;
   text-transform: uppercase;
@@ -12,4 +12,14 @@
     text-decoration: underline;
     text-transform: uppercase;
     line-height: 1.5;
+}
+@mixin title {
+  font-size: 23px;
+  font-family: "Titillium Web", sans-serif;
+  color: #000;
+
+}
+@mixin text {
+    font-size: 14px;
+    font-family: "Roboto Light", sans-serif;
 }
