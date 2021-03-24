@@ -3,4 +3,13 @@
   color: $text;
   font-size: 11px;
   text-transform: uppercase;
+  transition: 0.3s;
+}
+@mixin link {
+    font-weight: bold;
+    font-size: 16px;
+    color: #000;
+    text-decoration: underline;
+    text-transform: uppercase;
+    line-height: 1.5;
 }

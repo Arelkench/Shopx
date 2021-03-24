@@ -40,6 +40,9 @@
     align-items: center;
     .navbar-link {
       @include text;
+      &:hover {
+        color: $mint;
+      }
     }
   }
 }

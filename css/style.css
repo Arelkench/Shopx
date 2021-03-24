@@ -24,6 +24,7 @@ a {
   color: #45505e;
   font-size: 11px;
   text-transform: uppercase;
+  transition: 0.3s;
   max-width: 275px;
   height: 100%;
   border: none;
@@ -56,6 +57,10 @@ a {
   color: #45505e;
   font-size: 11px;
   text-transform: uppercase;
+  transition: 0.3s;
+}
+.header__navbar .navbar-link:hover {
+  color: #ade1c5;
 }
 
 .wrapper {
@@ -79,6 +84,30 @@ a {
   .header__search-input {
     width: 50px;
   }
+}
+.new-arrivals {
+  background: #ade1c5;
+  max-height: 576px;
+  display: flex;
+  justify-content: center;
+}
+.new-arrivals .wrapper {
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 100px 30px;
+}
+.new-arrivals .new-arrivals__offer .offer-img {
+  width: 100%;
+}
+.new-arrivals .new-arrivals__link {
+  font-weight: bold;
+  font-size: 16px;
+  color: #000;
+  text-decoration: underline;
+  text-transform: uppercase;
+  line-height: 1.5;
 }
 
 /*# sourceMappingURL=style.css.map */
