@@ -1,0 +1,54 @@
+.footer {
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  .footer__wrapper {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 60px;
+  }
+  &__info {
+    padding: 10px;
+    &-img {
+      width: auto;
+    }
+    &-text {
+      margin-top: 30px;
+      @include text;
+
+    }
+    &-excerpt {
+      color: $text;
+      text-decoration: none;
+      @include text;
+    }
+
+  }
+  &__links {
+    margin: 30px 0;
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+    &-heading {
+      @include title;
+      margin-bottom: 35px;
+    }
+    &-link {
+      margin: 10px 0;
+      color: $text;
+      @include text
+    }
+  }
+  .copyright {
+    padding: 10px;
+  }
+  .payment {
+    display: flex;
+    align-items: center;
+    .payment__logo {
+      width: auto;
+    }
+  }
+}

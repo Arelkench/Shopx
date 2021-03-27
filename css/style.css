@@ -164,6 +164,7 @@ a {
 }
 .product .product__block .product__block-text .title {
   color: #fff;
+  font-weight: 400;
   font-size: 23px;
   font-family: "Titillium Web", sans-serif;
   color: #000;
@@ -230,6 +231,64 @@ a {
   .our-advantages .our-advantages-block {
     width: 100%;
   }
+}
+.footer {
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+}
+.footer .footer__wrapper {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 60px;
+}
+.footer__info {
+  padding: 10px;
+}
+.footer__info-img {
+  width: auto;
+}
+.footer__info-text {
+  margin-top: 30px;
+  font-size: 14px;
+  font-family: "Roboto Light", sans-serif;
+}
+.footer__info-excerpt {
+  color: #45505e;
+  text-decoration: none;
+  font-size: 14px;
+  font-family: "Roboto Light", sans-serif;
+}
+.footer__links {
+  margin: 30px 0;
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+}
+.footer__links-heading {
+  font-weight: 400;
+  font-size: 23px;
+  font-family: "Titillium Web", sans-serif;
+  color: #000;
+  margin-bottom: 35px;
+}
+.footer__links-link {
+  margin: 10px 0;
+  color: #45505e;
+  font-size: 14px;
+  font-family: "Roboto Light", sans-serif;
+}
+.footer .copyright {
+  padding: 10px;
+}
+.footer .payment {
+  display: flex;
+  align-items: center;
+}
+.footer .payment .payment__logo {
+  width: auto;
 }
 
 /*# sourceMappingURL=style.css.map */
