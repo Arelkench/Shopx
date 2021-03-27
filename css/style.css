@@ -237,7 +237,7 @@ a {
   display: flex;
   flex-direction: column;
 }
-.footer .footer__wrapper {
+.footer__wrapper {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -280,14 +280,14 @@ a {
   font-size: 14px;
   font-family: "Roboto Light", sans-serif;
 }
-.footer .copyright {
+.footer__copyright {
   padding: 10px;
 }
-.footer .payment {
+.footer__payment {
   display: flex;
   align-items: center;
 }
-.footer .payment .payment__logo {
+.footer__payment-logo {
   width: auto;
 }
 
