@@ -1,0 +1,40 @@
+.our-advantages {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  .our-advantages-block {
+    padding: 5px;
+    min-width: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 260px;
+    background: $grey;
+    .block-img {
+      height: 60px;
+
+    }
+    .block__title {
+      margin-top: 30px;
+      @include heading;
+    }
+    .block__text {
+      text-align: center;
+      color: $text;
+    }
+  }
+}
+@media screen  and (max-width: 1140px){
+  .our-advantages .our-advantages-block {
+    width: 50%;
+  }
+
+}
+@media screen  and (max-width: 468px){
+  .our-advantages .our-advantages-block {
+    width: 100%;
+  }
+
+}

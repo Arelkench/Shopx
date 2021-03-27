@@ -23,3 +23,11 @@
     font-size: 14px;
     font-family: "Roboto Light", sans-serif;
 }
+@mixin heading {
+  font-weight: 300;
+  font-size: 18px;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-align: center;
+}

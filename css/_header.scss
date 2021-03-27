@@ -3,6 +3,7 @@
   flex-direction: column;
   align-items: center;
   &__search {
+    padding-left: 7px;
     height: 30px;
     &-img {
       width: auto;
@@ -19,7 +20,6 @@
     width: 100%;
     margin: 5px;
   }
-
   &__icons {
     max-width: 300px;
     display: flex;
