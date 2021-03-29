@@ -3,10 +3,13 @@
   margin: 0;
   color: #45505e;
   overflow-style: inherit;
+  box-sizing: border-box;
+  font-family: "Roboto Light", sans-serif;
 }
 a {
   text-decoration: none;
 }
+
 @import "mixins";
 @import "header";
 @import "new-arrivals";
@@ -14,3 +17,4 @@ a {
 @import "featured-product";
 @import "our-advantages";
 @import "footer";
+@import "modal-window";

@@ -3,6 +3,8 @@
   margin: 0;
   color: #45505e;
   overflow-style: inherit;
+  box-sizing: border-box;
+  font-family: "Roboto Light", sans-serif;
 }
 
 a {
@@ -289,6 +291,111 @@ a {
 }
 .footer__payment-logo {
   width: auto;
+}
+
+.overlay {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.show {
+  display: flex;
+}
+
+.modal {
+  border-radius: 25px;
+  background-color: #ade1c5;
+  min-width: 600px;
+  max-height: 400px;
+  padding: 30px;
+  position: relative;
+}
+.modal__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.modal__header-close {
+  width: 30px;
+  font-weight: bold;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  background: #fff;
+  border-radius: 35px;
+  height: 30px;
+}
+.modal__cart {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-y: scroll;
+}
+.modal__cart .item {
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.modal__cart .item .item__name {
+  font-weight: 400;
+  font-size: 23px;
+  font-family: "Titillium Web", sans-serif;
+  color: #000;
+}
+.modal__cart .item .item__price {
+  font-weight: 400;
+  font-size: 23px;
+  font-family: "Titillium Web", sans-serif;
+  color: #000;
+}
+.modal__cart .item .item__count {
+  width: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.modal__cart .item .item__count .item-btn {
+  width: 30px;
+  font-weight: bold;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  background: #fff;
+  border-radius: 35px;
+  height: 30px;
+}
+.modal__form {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.modal__form-input {
+  margin-right: 30px;
+  height: 40px;
+  padding: 10px;
+  border-radius: 20px;
+  border-style: none;
+  margin-bottom: 30px;
+}
+.modal__form .cart-buy {
+  background-color: #28a745;
+  border-color: #28a745;
+  display: block;
+  margin-left: auto;
+  height: 40px;
 }
 
 /*# sourceMappingURL=style.css.map */

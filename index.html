@@ -4,11 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" href="img/favicon.png" type="image/png">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;600&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
     <title>Shopx</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 <header class="header">
@@ -22,7 +21,7 @@
             <a href="#user" class="user">
                 <img class="user-img" src="img/user__logo.png" alt="user">
             </a>
-            <a href="#cart" class="cart">
+            <a href="#cart" class="button-cart">
                 <img class="cart-img" src="img/cart__logo.png" alt="cart">
             </a>
         </div>
@@ -184,43 +183,35 @@
         </div>
     </div>
 </footer>
-<div class="overlay" id="modal-cart">
+<div class="overlay">
     <div class="modal">
-        <header class="modal-header">
-            <h2 class="modal-title">Cart</h2>
-            <button class="modal-close">x</button>
+        <header class="modal__header">
+            <h2 class="modal__header-title">Cart</h2>
+            <button class="modal__header-close">x</button>
         </header>
-        <div class="cart-table">
-            <div class="cart-table__block">
-                <p class="name">Good(s)</p>
-                <p class="name">Price</p>
-                <p class="name">Qty.</p>
-                <p class="name">Total</p>
+        <div class="modal__cart">
+            <div class="item">
+                <p class="item__name">Lala</p>
+                <p class="item__price">$343</p>
+                <div class="item__count">
+                    <button class="count-minus item-btn">-</button>
+                    <p class="text">2</p>
+                    <button class="count-plus item-btn">+</button>
+                </div>
+                <p class="item__total">Total: $343</p>
             </div>
-            <div class="cart-table__goods">
-            <div class="cart-item" data-id="003">
-                <p class="name">Sweater</p>
-                <p class="name">250$</p>
-                <button class="cart-btn-minus">-</button>
-                <p>2</p>
-                <button class="cart-btn-plus">+</button>
-                <p class="name">500$</p>
-                <button class="cart-btn-delete">x</button>
-            </div>
-            </div>
-            <div class="modal__wrapper">
-                <p>Total:</p>
-                <p class="card-table__total">1500$</p>
-            </div>
+            <p class="total">Total: </p>
         </div>
-        <form class="modal-form" action="">
-            <input class="modal-input" type="text" placeholder="Имя" name="nameCustomer"/>
-            <input class="modal-input" type="text" placeholder="Телефон" name="phoneCustomer"/>
+        <form class="modal__form" action="">
+            <input class="modal__form-input" type="text" placeholder="Имя" name="nameCustomer">
+            <input class="modal__form-input" type="text" placeholder="Телефон" name="phoneCustomer">
             <button class="button cart-buy">
                 <span class="button-text">Checkout</span>
             </button>
         </form>
     </div>
 </div>
+
+<script src="js/main.js"></script>
 </body>
 </html>
