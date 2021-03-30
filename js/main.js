@@ -1,16 +1,15 @@
 const
     buttonCart = document.querySelector('.button-cart'),
-    modalCart = document.querySelector('.overlay'),
+    modal = document.querySelector('.overlay'),
     modalClose = document.querySelector('.modal__header-close'),
-    more =  document.querySelector('.more'),
-    cartTableGoods = document.querySelector('.modal__cart'),
-    cartTableTotal = document.querySelector(".modal__cart-total");
+    modalCart = document.querySelector('.modal__cart'),
+    modalCartTotal = document.querySelector(".modal__cart-total");
 
 const openModal =  () => {
-    modalCart.classList.add('show');
+    modal.classList.add('show');
 }
 const closeModal =  () => {
-    modalCart.classList.remove('show');
+    modal.classList.remove('show');
 }
 
 buttonCart.addEventListener('click', openModal);
@@ -42,7 +41,7 @@ const cart = {
         },
     ],
     renderCart(){
-        cartTableGoods.textContent = "";
+        modalCart.textContent = "";
         this.cartGoods.forEach(({id, name, price, count}) => {
             const  item = document.createElement("div");
             item.className = "item";
@@ -57,12 +56,12 @@ const cart = {
                 </div>
                 <p class="item__total">'Total:' + ${price * count}</p>
                 <button class="item-delete item-btn">x</button>`
-            cartTableGoods.append(item);
+            modalCart.append(item);
         });
         const totalPrice = this.cartGoods.reduce((sum, item) => {
             return sum + item.price * item.count ;
         }, 0)
-        cartTableTotal.textContent = totalPrice + '$'
+        modalCartTotal.textContent = totalPrice + '$'
     },
     deleteGood(id){
         this.cartGoods = this.cartGoods.filter(item => id !== item.id);
