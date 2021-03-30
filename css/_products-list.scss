@@ -20,6 +20,7 @@
   height: 500px;
   display: flex;
   padding: 10px;
+  transition: 0.3s;
   .product__sidebar {
     padding-right: 20px;
     width: 20%;
@@ -56,15 +57,21 @@
       }
     }
     .product__block-btn {
+      border: none;
+      cursor: pointer;
       text-align: left;
       padding-left: 20px;
       color: #fff;
       @include navLink;
       outline: none;
       background: #fff;
-      border-top: 1px solid #f4f4f4;
-      border: none;
       height: 85px;
+      .button-text {
+        padding: 0 10px;
+      }
     }
   }
+}
+.product:hover {
+  box-shadow: 0 0 10px #d9d8d8;
 }

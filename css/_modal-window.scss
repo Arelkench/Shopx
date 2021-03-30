@@ -60,10 +60,20 @@
           @include  cart-btn;
         }
       }
+      &-delete {
+        width: 30px;
+        height: 30px;
+        @include cart-btn;
+      }
     }
     &-total {
       margin-top: 10px;
       width: 100%;
+      display: flex;
+      justify-content: space-between;
+      .total-text {
+        @include title;
+      }
     }
   }
   &__form {

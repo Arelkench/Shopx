@@ -7,6 +7,7 @@ const
 
 const openModal =  () => {
     modal.classList.add('show');
+    cart.renderCart();
 }
 const closeModal =  () => {
     modal.classList.remove('show');
@@ -108,4 +109,30 @@ const cart = {
         }
     }
 };
+
+document.body.addEventListener('click', e => {
+    const addToCart = e.target.closest('.add-to-cart');
+    if (addToCart){
+        cart.addCartGoods(addToCart.dataset.id);
+    }
+})
+
+modalCart.addEventListener('click', e => {
+    const target = e.target ;
+    if (target.tagName === "BUTTON") {
+        const id = target.closest('.cart-item').dataset.id;
+
+        if (target.classList.contains('cart-btn-delete')) {
+            cart.deleteGood(id);
+        }
+        if (target.classList.contains('cart-btn-minus')) {
+            cart.minusGood(id);
+        }
+        if (target.classList.contains('cart-btn-plus')) {
+            cart.plusGood(id);
+        }
+    }
+})
+
+
 
