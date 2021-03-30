@@ -3,6 +3,7 @@ const
     modal = document.querySelector('.overlay'),
     modalClose = document.querySelector('.modal__header-close'),
     modalCart = document.querySelector('.modal__cart'),
+    goodsList = document.querySelector('.products-list__inner'),
     modalCartTotal = document.querySelector(".modal__cart-total");
 
 const openModal =  () => {
@@ -110,6 +111,25 @@ const cart = {
     }
 };
 
+const createCard = function ({label, name, img, description, id, price}) {
+    const product = document.createElement('div');
+    product.className = 'product';
+    product.innerHTML = `
+         <img  src="db/${img}" alt='${name}' class="product__img"/>
+         <div class=product__text-box>
+            <h3 class="text-box-title text">${name}</h3>
+            <p class="text-box-description text">${description}</p>
+            <span class="text-box-price text">$${price}</span>
+         </div>
+         <button class="product__btn add-to-cart" data-id="003" type="submit">
+             <img src="img/cart__logo.png" alt="cart">
+             <span class="button-text">Add to cart</span>
+         </button>                   
+    `;
+    console.log(product);
+    return product;
+};
+
 document.body.addEventListener('click', e => {
     const addToCart = e.target.closest('.add-to-cart');
     if (addToCart){
@@ -120,7 +140,7 @@ document.body.addEventListener('click', e => {
 modalCart.addEventListener('click', e => {
     const target = e.target ;
     if (target.tagName === "BUTTON") {
-        const id = target.closest('.cart-item').dataset.id;
+        const id = target.closest('.item').dataset.id;
 
         if (target.classList.contains('cart-btn-delete')) {
             cart.deleteGood(id);
@@ -133,6 +153,20 @@ modalCart.addEventListener('click', e => {
         }
     }
 })
+const renderCards = function (data) {
+    goodsList.textContent = '';
+    console.log(data);
+    const cards = data.map(createCard)
+    goodsList.append(...cards)
+};
+getGoods().then(renderCards);
+const filterCards = function (field, value) {
+    getGoods()
+        .then(data => data.filter(good => good[field] === value))
+        .then(renderCards);
+}
+
+
 
 
 

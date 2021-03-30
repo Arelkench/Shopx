@@ -125,59 +125,40 @@ a {
   justify-content: space-evenly;
 }
 .products-list .products-list__inner {
-  max-width: 1200px;
+  max-width: 1300px;
   margin: 56px 0;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-around;
 }
 
 .product {
-  height: 500px;
+  width: 300px;
+  min-height: 500px;
   display: flex;
+  flex-direction: column;
   padding: 10px;
   transition: 0.3s;
 }
-.product .product__sidebar {
-  padding-right: 20px;
-  width: 20%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.product__img {
+  object-fit: contain;
+  height: 190px;
 }
-.product .product__sidebar .product__sidebar-link {
-  margin: 10px 0;
-}
-.product .product__block {
-  width: 250px;
-  display: flex;
-  flex-direction: column;
-}
-.product .product__block .product__block-img {
-  background: #e7a8c6;
-  width: 100%;
-  height: 250px;
-}
-.product .product__block .product__block-text {
+.product__text-box {
+  margin-top: 20px;
   padding-left: 20px;
-  display: flex;
   justify-content: center;
   flex-direction: column;
-  height: 158px;
+  height: 220px;
 }
-.product .product__block .product__block-text .title {
-  color: #fff;
+.product__text-box .text {
+  color: #000;
   font-weight: 400;
   font-size: 23px;
   font-family: "Titillium Web", sans-serif;
   color: #000;
 }
-.product .product__block .product__block-text .price {
-  color: #000;
-  font-size: 14px;
-  font-family: "Roboto Light", sans-serif;
-}
-.product .product__block .product__block-btn {
+.product__btn {
   border: none;
   cursor: pointer;
   text-align: left;
@@ -191,7 +172,7 @@ a {
   background: #fff;
   height: 85px;
 }
-.product .product__block .product__block-btn .button-text {
+.product__btn .button-text {
   padding: 0 10px;
 }
 
