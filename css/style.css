@@ -153,6 +153,7 @@ a {
 }
 .product__text-box .text {
   color: #000;
+  word-break: break-word;
   font-weight: 400;
   font-size: 23px;
   font-family: "Titillium Web", sans-serif;
@@ -259,6 +260,7 @@ a {
   flex-direction: column;
 }
 .footer__links-heading {
+  word-break: break-word;
   font-weight: 400;
   font-size: 23px;
   font-family: "Titillium Web", sans-serif;
@@ -329,30 +331,38 @@ a {
   align-items: center;
 }
 .modal__cart .item {
+  margin: 10px 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 100%;
 }
+.modal__cart .item__wrapper {
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  padding-right: 20px;
+}
 .modal__cart .item .item__name {
+  word-break: break-word;
   font-weight: 400;
   font-size: 23px;
   font-family: "Titillium Web", sans-serif;
   color: #000;
 }
 .modal__cart .item .item__price {
-  font-weight: 400;
-  font-size: 23px;
-  font-family: "Titillium Web", sans-serif;
-  color: #000;
+  font-size: 14px;
+  font-family: "Roboto Light", sans-serif;
 }
 .modal__cart .item .item__count {
   width: 100px;
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   align-items: center;
 }
 .modal__cart .item .item__count .item-btn {
+  margin: 5px;
   width: 30px;
   height: 30px;
   font-weight: bold;
@@ -377,8 +387,7 @@ a {
   width: 100%;
   display: flex;
   justify-content: space-between;
-}
-.modal__cart-total .total-text {
+  word-break: break-word;
   font-weight: 400;
   font-size: 23px;
   font-family: "Titillium Web", sans-serif;

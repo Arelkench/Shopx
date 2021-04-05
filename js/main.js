@@ -36,8 +36,10 @@ const cart = {
             item.className = "item";
             item.dataset.id = id;
             item.innerHTML = `
-                <p class="item__name">${name}</p>
-                <p class="item__price">${price}</p>
+                <div class="item__wrapper">
+                    <p class="item__name">${name}</p>
+                    <p class="item__price">Price: ${price}</p>
+                </div>
                 <div class="item__count">
                     <button class="count-minus item-btn">-</button>
                     <p class="text">${count}</p>
@@ -50,15 +52,14 @@ const cart = {
         const totalPrice = this.cartGoods.reduce((sum, item) => {
             return sum + item.price * item.count ;
         }, 0)
-        modalCartTotal.textContent = totalPrice + '$'
+        modalCartTotal.textContent ='Total:  '+ totalPrice + '$'
     },
     plusGood(id) {
         for (let item of cart.cartGoods) {
-            console.log(item);
             if (item.id === id) {
                 item.count++;
+                break;
             }
-            break;
         }
         this.renderCart()
     },
@@ -81,7 +82,6 @@ const cart = {
     },
     addGood(id) {
        const item = this.cartGoods.find(item => item.id === id);
-       console.log(item);
        if (item) {
            item.count++;
        } else  {
@@ -119,7 +119,6 @@ modalCart.addEventListener('click', e => {
             cart.deleteGood(id);
         }
         if (target.classList.contains('count-minus')) {
-            console.log('dsds')
             cart.minusGood(id);
         }
         if (target.classList.contains('count-plus')) {
