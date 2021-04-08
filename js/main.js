@@ -21,7 +21,6 @@ buttonCart.addEventListener('click', openModal);
 modalClose.addEventListener('click', closeModal);
 
 
-
 const getGoods = async () => {
     const res = await fetch('db/db.json');
     if (!res.ok) {
@@ -100,10 +99,7 @@ const cart = {
                })
        }
     }
-
-
 };
-
 
 document.body.addEventListener('click', e => {
     const target = e.target
@@ -156,13 +152,3 @@ const renderCards = function (data) {
 };
 
 getGoods().then(renderCards);
-
-
-
-
-
-
-
-
-
-
