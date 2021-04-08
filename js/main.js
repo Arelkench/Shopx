@@ -4,7 +4,10 @@ const
     modalClose = document.querySelector('.modal__header-close'),
     modalCart = document.querySelector('.modal__cart'),
     goodsList = document.querySelector('.products-list__inner'),
-    modalCartTotal = document.querySelector(".modal__cart-total");
+    modalCartTotal = document.querySelector(".modal__cart-total"),
+    customerName = document.forms["cartForm"]["customerName"].value,
+    customerPhone = document.forms["cartForm"]["customerPhone"].value,
+    cartBuy = document.querySelector(".cart-buy");
 
 const openModal =  () => {
     modal.classList.add('show');
@@ -151,6 +154,7 @@ const renderCards = function (data) {
     goodsList.append(...cards)
 
 };
+
 getGoods().then(renderCards);
 
 
